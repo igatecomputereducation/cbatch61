@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-	float hei,wei,bmi;
-	printf("Your weight in kgs:");
+	float wei,hei,bmi;
+	printf("Weight in Kgs:");
 	scanf("%f",&wei);
-	printf("Your height in feets:");
+	printf("Height in feets:");
 	scanf("%f",&hei);
 	hei=hei*0.3048;
 	bmi=wei/(hei*hei);
 	printf("Your body mass index %f\n",bmi);
-	if(bmi>30)
-		printf("Obesity");
+	if(bmi>=30)
+		printf("Obiss");
 	else if(bmi>=25)
 		printf("Over weight");
 	else if(bmi>=18.5)
 		printf("Normal weight");
 	else
-		printf("under weight");
+		printf("Under weight");
 	return 0;
 }
