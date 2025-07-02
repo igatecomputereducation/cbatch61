@@ -4,12 +4,14 @@ int main()
 	char ltype;
 	int amt,time;
 	float rate,si,tot;
+	
 	printf("Enter loan type [c/p/v/b/h]:");
 	scanf("%c",&ltype);
 	printf("Amount:");
 	scanf("%i",&amt);
 	printf("Time in months:");
 	scanf("%i",&time);
+	
 	switch(ltype)
 	{
 		case 'c':
